@@ -53,16 +53,49 @@ Built with Flutter and supports:
 
 ## 📸 Screenshots
 
-<p align="center">
-  <img src="assets/Design/First%20Welcome.png" width="180"/>
-  <img src="assets/Design/Notes.png" width="180"/>
-  <img src="assets/Design/Task.png" width="180"/>
-</p>
+<div align="center">
 
-<p align="center">
-  <img src="assets/Design/Stats.png" width="180"/>
-  <img src="assets/Design/Setings.png" width="180"/>
-</p>
+<table>
+<tr>
+<td align="center">
+<img src="assets/Design/First%20Welcome.png" width="220">
+<br>
+<b>Welcome</b>
+</td>
+
+<td align="center">
+<img src="assets/Design/Notes.png" width="220">
+<br>
+<b>Notes</b>
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<img src="assets/Design/Task.png" width="220">
+<br>
+<b>Tasks</b>
+</td>
+
+<td align="center">
+<img src="assets/Design/Stats.png" width="220">
+<br>
+<b>Statistics</b>
+</td>
+</tr>
+
+<tr>
+<td align="center" colspan="2">
+<img src="assets/Design/Setings.png" width="220">
+<br>
+<b>Settings</b>
+</td>
+</tr>
+
+</table>
+
+</div>
+
 
 ---
 
