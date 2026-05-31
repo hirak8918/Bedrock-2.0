@@ -40,15 +40,6 @@ Bedrock 2.0 combines note-taking, task management, progress tracking, and person
 * User profile setup
 * Responsive design
 
-### 🚀 Cross Platform
-
-Built with Flutter and supports:
-
-* Android
-* Windows
-* Linux
-* Web
-
 ---
 
 ## 📸 Screenshots
