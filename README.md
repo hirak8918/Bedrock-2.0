@@ -53,25 +53,16 @@ Built with Flutter and supports:
 
 ## 📸 Screenshots
 
-### Welcome Screen
+<p align="center">
+  <img src="assets/Design/First%20Welcome.png" width="180"/>
+  <img src="assets/Design/Notes.png" width="180"/>
+  <img src="assets/Design/Task.png" width="180"/>
+</p>
 
-![Welcome Screen](assets/Design/First%20Welcome.png)
-
-### Notes
-
-![Notes](assets/Design/Notes.png)
-
-### Tasks
-
-![Tasks](assets/Design/Task.png)
-
-### Statistics
-
-![Statistics](assets/Design/Stats.png)
-
-### Settings
-
-![Settings](assets/Design/Setings.png)
+<p align="center">
+  <img src="assets/Design/Stats.png" width="180"/>
+  <img src="assets/Design/Setings.png" width="180"/>
+</p>
 
 ---
 
