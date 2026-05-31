@@ -1,0 +1,121 @@
+System Prompt: Bedrock App Development Initialization
+1. Project Overview & Architecture
+App Name: Bedrock (inspired by the foundational block in Minecraft).
+
+Core Function: A minimalist, privacy-first, offline notes and task manager for Android.
+
+Platform/Stack: Antigravity.
+
+Design Philosophy: Dark-themed, retro-futuristic, and highly structural. The UI relies on a background grid texture, neon green primary accents, and clearly defined spatial boundaries for cards.
+
+2. Initialization & Pre-App Flow
+Before the user reaches the core application, the system must handle the following sequence precisely:
+
+First-Launch Boot Sequence:
+
+Display a clean splash screen featuring the green BEDROCK logo.
+
+Immediately route the user to the Terms & Conditions screen. The user must accept an offline-first privacy policy to proceed.
+
+Permissions Gate:
+
+Prompt for necessary device permissions (Local Storage for offline data, Notifications for task reminders). Explain why these are needed in the UI before triggering the OS-level prompt.
+
+Onboarding & Profile Setup (Screen 5):
+
+Header: "WELCOME TO BEDROCK. Let's set up your profile."
+
+Inputs: A text field for the user's name (placeholder: "e.g., Alex").
+
+Avatar Selection: Provide a button to "Upload Picture" and a horizontal selection of default 8-bit/pixel-art avatars.
+
+Action: A prominent green "GET STARTED" button to finalize setup and initialize the local database.
+
+3. Global Design System & Theming
+Instruct the Antigravity styling engine to enforce these variables globally:
+
+Background: Dark gray/almost black (#121212 or similar) with a subtle, repeating dot-grid overlay pattern.
+
+Typography: Use a clean, modern sans-serif for body text. Use a blocky, structural sans-serif for the BEDROCK logo and main headers.
+
+Accent Colors:
+
+Primary Accent: Neon/Mint Green.
+
+Secondary Accents (for tags): Blue (WORK), Red (URGENT), Brown/Rose (CREATIVE).
+
+Card Surfaces: slightly lighter gray (#1E1E1E), rounded corners (approx. 12px-16px radius), with subtle 1px borders to separate them from the grid background.
+
+Navigation: A fixed bottom navigation bar with four tabs: NOTES, TASKS, STATS, SETTINGS. Active state text and icon become the primary green.
+
+Action Buttons (FABs): Square buttons with sharp or very slightly rounded corners, positioned at the bottom right of lists.
+
+4. Core Screens Implementation
+A. Notes View (Screen 1)
+Header: Global search icon, center logo, user avatar (top right).
+
+Pinned Section: Horizontal or vertical list of priority notes. Note cards include:
+
+Title and an external link/expand icon.
+
+Two-line preview of the body text.
+
+Dynamic category tags (e.g., WORK, URGENT).
+
+Relative timestamp (e.g., "2h ago").
+
+Support for header images (e.g., the grayscale 3D landscape graphic).
+
+Recent Notes Section: Chronological list. Cards display title, description, and date (e.g., "Nov 12").
+
+Interaction: A green square + button anchored above the nav bar to create a new note.
+
+B. Tasks / Schedule View (Screen 2)
+Date Navigation: Horizontal pill-shaped tabs for YESTERDAY, TODAY (Active, highlighted with green border), and TOMORROW. Top right shows the current date (e.g., "OCT 24").
+
+Pending Section:
+
+Displays a count badge (e.g., "3").
+
+Task cards feature a custom square checkbox on the left, title, sub-description, and priority tags (e.g., HIGH, ROUTINE).
+
+Include a green left-border highlight to indicate active status.
+
+Support for attachment indicators (e.g., "2 Files attached").
+
+Done Section:
+
+Completed tasks move here. Text becomes grayed out/strikethrough. The green border disappears.
+
+C. Stats / Dashboard View (Screen 3)
+Grid Layout: Four main metric cards at the top.
+
+Today: Hours logged, comparison vs yesterday (e.g., "+1.1h vs yesterday").
+
+This Week: Total hours, visual progress bar.
+
+Streak: Days active (e.g., 14), flame icon.
+
+Best Day: Record hours, specific date (e.g., "Tuesday, Oct 12").
+
+Activity Trends: A custom chart card below the grid. Include a "Details ->" link. The chart should display activity levels across the days of the week (Mon-Sun), highlighting the current day in green.
+
+D. Settings View (Screen 4)
+Header: "Settings - Configure your environment preferences."
+
+Appearance: Three large square toggle buttons for Light, Dark (Active, green border), and System.
+
+Color Seed: A grid of color swatches to change the global primary accent color. The active color must have a border highlight.
+
+List Options:
+
+About Bedrock: Standard list item with a right chevron. CRITICAL: The internal page for this must explicitly state: "Developed by Hirak Barman".
+
+Terms & Conditions: Link to the privacy policy accepted during onboarding.
+
+App Info: Displays the current version number (e.g., "v2.4.1").
+
+5. Data Models & State Requirements
+Ensure all state management relies on local offline storage. No cloud syncing should be initialized by default.
+
+Implement strict relational models linking Tasks to specific Dates, and Notes to optional Tags/Categories.
